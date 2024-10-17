@@ -1,8 +1,6 @@
-import { server } from "../src/server"
-import Prisma from "../src/db";
 import { Entry } from "@prisma/client";
-
-
+import Prisma from "../src/db";
+import { server } from "../src/server";
 
 describe("sum test", () => {
   it("should assert 1 + 1 is 2", () => {
@@ -12,8 +10,8 @@ describe("sum test", () => {
 
 describe("sever tests", () => {
   it("test test", () => {
-    expect(server.get).toBeDefined()
-  })
+    expect(server.get).toBeDefined();
+  });
 
   // it("test db returns error when entry does not exist", () => {
   //   const entry = <Entry> {id: "title",
@@ -23,7 +21,7 @@ describe("sever tests", () => {
   //     scheduled_for: new Date}
   //   expect(server.get("title"))
   // })
-})
+});
 // console.log(server.get)
 // let container = null;
 // beforeEach(() => {
@@ -42,8 +40,6 @@ describe("sever tests", () => {
 // beforeAll(() => {
 
 // })
-
-
 
 // server.get<{ Body: Entry; Params: { id: string } }>(
 //   "/get/:id",
@@ -64,7 +60,6 @@ describe("sever tests", () => {
 //   })
 // })
 
-
 // const { test } = require('tap')
 // const build = require('./app')
 
@@ -78,7 +73,6 @@ describe("sever tests", () => {
 //   t.equal(response.statusCode, 200, 'returns a status code of 200')
 // })
 
-
 // fastify.inject({
 //   method: String,
 //   url: String,
@@ -89,9 +83,6 @@ describe("sever tests", () => {
 // }, (error, response) => {
 //   // your tests
 // })
-
-
-
 
 // const { test } = require('tap')
 // const build = require('./app')
